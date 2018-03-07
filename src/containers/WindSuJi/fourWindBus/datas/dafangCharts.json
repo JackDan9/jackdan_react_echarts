@@ -1,0 +1,75 @@
+{
+  "1": [
+    { "name": "形式主义", "value": 4},
+    { "name": "享乐主义", "value": 7},
+    { "name": "官僚主义", "value": 3},
+    { "name": "奢靡之风", "value": 5}
+  ],
+  "2": [
+    { "name": "形式主义", "value": 3},
+    { "name": "享乐主义", "value": 7},
+    { "name": "官僚主义", "value": 1},
+    { "name": "奢靡之风", "value": 8}
+  ],
+  "3": [
+    { "name": "形式主义", "value": 4},
+    { "name": "享乐主义", "value": 6},
+    { "name": "官僚主义", "value": 7},
+    { "name": "奢靡之风", "value": 2}
+  ],
+  "4": [
+    { "name": "形式主义", "value": 5},
+    { "name": "享乐主义", "value": 4},
+    { "name": "官僚主义", "value": 3},
+    { "name": "奢靡之风", "value": 5}
+  ],
+  "5": [
+    { "name": "形式主义", "value": 5},
+    { "name": "享乐主义", "value": 7},
+    { "name": "官僚主义", "value": 1},
+    { "name": "奢靡之风", "value": 8}
+  ],
+  "6": [
+    { "name": "形式主义", "value": 2},
+    { "name": "享乐主义", "value": 7},
+    { "name": "官僚主义", "value": 4},
+    { "name": "奢靡之风", "value": 6}
+  ],
+  "7": [
+    { "name": "形式主义", "value": 3},
+    { "name": "享乐主义", "value": 2},
+    { "name": "官僚主义", "value": 7},
+    { "name": "奢靡之风", "value": 4}
+  ],
+  "8": [
+    { "name": "形式主义", "value": 1},
+    { "name": "享乐主义", "value": 2},
+    { "name": "官僚主义", "value": 7},
+    { "name": "奢靡之风", "value": 5}
+  ],
+  "9": [
+    { "name": "形式主义", "value": 4},
+    { "name": "享乐主义", "value": 8},
+    { "name": "官僚主义", "value": 1},
+    { "name": "奢靡之风", "value": 1}
+  ],
+  "10": [
+    { "name": "形式主义", "value": 5},
+    { "name": "享乐主义", "value": 7},
+    { "name": "官僚主义", "value": 1},
+    { "name": "奢靡之风", "value": 5}
+  ],
+  "11": [
+    { "name": "形式主义", "value": 6},
+    { "name": "享乐主义", "value": 3},
+    { "name": "官僚主义", "value": 4},
+    { "name": "奢靡之风", "value": 2}
+  ],
+  "12": [
+    { "name": "形式主义", "value": 2},
+    { "name": "享乐主义", "value": 4},
+    { "name": "官僚主义", "value": 2},
+    { "name": "奢靡之风", "value": 3}
+  ],
+  "total": 203
+}

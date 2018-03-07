@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  padding-top: 0;
+  .tables {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #007ecd;
+    span {
+      display: inline-block;
+      line-height: 40px;
+      text-align: center;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  .thead {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    padding: 0 5px;
+    border-bottom: 1px solid #0077c2;
+    box-shadow: 0 0 12px #0077c2 inset;
+  }
+  .tbody {
+    width: 100%;
+    height: calc(100% - 40px);
+    overflow: auto;
+    padding: 0 5px;
+    .result {
+      width: 100%;
+      border-bottom: 1px solid #0077c2;
+    }
+    &::-webkit-scrollbar {
+      background: none;
+    }
+  }
+  .od {
+    width: 10%;
+  }
+  .type {
+    width: 30%;
+  }
+  .action {
+    width: 60%;
+  }
+}

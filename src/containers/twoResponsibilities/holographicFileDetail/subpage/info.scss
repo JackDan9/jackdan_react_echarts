@@ -1,0 +1,26 @@
+.box{
+  display:inline-block;
+  height:100%;
+  position: relative;
+  img{
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .info{
+    display:none;
+    text-align:center;
+    position: absolute;
+    color:#e1ab58;
+    width:100px;
+    height:18px;
+    line-height:18px;
+    padding:0 8px;
+    border:1px solid #7b726e;
+    -webkit-border-radius:9px;
+    -moz-border-radius:9px;
+    border-radius:9px;
+    right:10px;
+    bottom:-20px;
+    font-size:12px;
+  }
+}

@@ -1,0 +1,70 @@
+.table{
+  padding:0 15px 65px;
+  position: relative;
+  table{
+    td:last-child{
+      width:6% !important;
+    }
+    td:first-child{
+      width:14% !important;
+    }
+    td{
+      width:13.33%;
+    }
+  }
+  .title{
+    width:100%;
+    text-align: center;
+    thead tr{
+      line-height: 56px;
+      border:1px solid #0183d7;
+      box-shadow: 0 0 8px #0183d7 inset;
+    }
+  }
+  .tbodyBox{
+    width: 99.95%;
+    max-height: 667px;
+    overflow: auto;
+    border-left:1px solid #0183d7;
+    border-bottom:1px solid #0183d7;
+    border-right:1px solid #0183d7;
+    box-sizing: border-box;
+    table{
+      width:100%;
+      text-align: center;
+      .bottomBorder{
+        border-bottom: 1px solid #054c76;
+      }
+      tbody td{
+        line-height: 110px;
+        img{
+          vertical-align: middle;
+        }
+      }
+      tbody tr:last-child td{
+        border-bottom: 0;
+      }
+      .detail{
+        cursor: pointer;
+        color:#ffa000;
+      }
+    }
+  }
+
+  .rightCut{
+    position: absolute;
+    border:1px solid #0183d7;
+    border-right:0;
+    right: 0;
+    top: 240px;
+    div{
+      cursor: pointer;
+      padding:18px 6px 18px 12px;
+      line-height: 25px;
+      width: 40px;
+      letter-spacing: 4px;
+      z-index: 99;
+    }
+  }
+
+}

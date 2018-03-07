@@ -1,0 +1,51 @@
+.header{
+  color:#fff;
+  text-align: right;
+  height:5.9rem;
+  background:none;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-bottom:1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .navItem{
+    margin:0 25px;
+  }
+  .leftLogo{
+    display: flex;
+    flex-flow: row;
+    align-self:flex-end;
+    img{
+      width:37rem;
+      height:3.6rem;
+    }
+  }
+  .rightNav{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-self:flex-end;
+  }
+}
+.navItem{
+  display:inline-block;
+  padding:0 0.5rem;
+  height:2.6rem;
+  line-height:2.6rem;
+  font-size:0.9rem;
+}
+.navItemActive{
+   color:#008ae4;
+   background:url("./image/navSelected.png") no-repeat left bottom;
+   background-size:100% 3%;
+ }
+.user{
+  height:2.6rem;
+  line-height:2.6rem;
+  font-size:16px;
+  span{
+    padding:6px;
+  }
+}

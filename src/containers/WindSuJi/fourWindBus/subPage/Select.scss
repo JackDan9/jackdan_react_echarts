@@ -1,0 +1,58 @@
+.select-component {
+    position: relative;
+    cursor: pointer;
+    padding: 0 10px;
+    display: inline-block;
+    white-space: nowrap;
+    background: #fff;
+    color: #000;
+    border: 1px solid #0183d9;
+    border-radius: 7px;
+
+    img {
+      height: 70%;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+
+        span {
+            flex: 1 1 auto;
+            margin-right: 10px;
+        }
+
+        i {
+            margin-left: 5px;
+            color: #4c61b4;
+        }
+    }
+
+    ul {
+        border-radius: 7px;
+        position: absolute;
+        overflow-x: hidden;
+        top: 100%;
+        background: #fff;
+        left: -1px;
+        right: -1px;
+        z-index: 1000;
+        border: 1px solid #0183d9;
+        max-height: 20em;
+        overflow-y: auto;
+
+        li {
+            padding: 0 5px;
+        }
+
+        li:hover {
+            background: #0183d9;
+            color: #fff;
+        }
+
+        li.active {
+          background: #0183d9;
+          color: #fff;
+        }
+    }
+}

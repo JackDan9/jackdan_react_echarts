@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "react",
+    "es2015",
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["IE >= 10"]
+        }
+      }
+    ],
+    "stage-0"
+  ],
+  "plugins": ["transform-decorators-legacy"]
+}

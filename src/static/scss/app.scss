@@ -1,0 +1,27 @@
+// vendors
+
+@import "base/common.scss";
+
+//@import "base/normalize.style.scss";
+
+@import "base/reset.scss";
+
+@import "helpers/mixin";
+
+@import "icons/iconfont.scss";
+
+@import "components/index";
+
+@import "base/swiper.scss";
+
+//@import "base/PaginationThis.scss" ;
+@import "components/pagination";
+
+
+@include scrollbar(#5494ca, 6px, #eee)
+
+
+
+
+
+

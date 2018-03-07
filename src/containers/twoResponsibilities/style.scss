@@ -1,0 +1,19 @@
+.Box{
+  display: flex;
+  justify-content: space-between;
+  height:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom:20px;
+  .Nav{
+    width:9.2%;
+    min-height:200px;
+    background:#091e4b;
+    color:#fff;
+  }
+  .container{
+    width:90.8%;
+    color:#fff;
+  }
+}

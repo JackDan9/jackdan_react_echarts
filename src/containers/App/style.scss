@@ -1,0 +1,17 @@
+#home-page {
+  width:100%;
+  background: url("./images/backgroundImage.png");
+  .container{
+    min-width: 1300px; //
+    width:91%;
+    margin:0 auto;
+  }
+  /*
+  background: linear-gradient(to bottom, #f1d4b4 50%, #e51813 120%);
+  background: -moz-linear-gradient(top, #f1d4b4 50%, #e51813 120%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#f1d4b4), color-stop(120%,#e51813));
+  background: -webkit-linear-gradient(top, #f1d4b4 50%,#e51813 120%);
+  background: -o-linear-gradient(top, #f1d4b4 50%,#e51813 120%);
+  background: -ms-linear-gradient(top, #f1d4b4 50%,#e51813 120%);*/
+}
+

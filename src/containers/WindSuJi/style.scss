@@ -1,0 +1,18 @@
+.Box{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom:20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .leftNav{
+    width:9.2%;
+    min-height:200px;
+    background:#091e4b;
+    color:#fff;
+  }
+  .container{
+    width:90.8%;
+    color:#fff;
+  }
+}

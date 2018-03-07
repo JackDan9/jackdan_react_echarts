@@ -1,0 +1,31 @@
+.table{
+  padding: 0 25px;
+}
+.biao{
+  width: 100%;
+}
+.thead{
+  height: 52px;
+  line-height: 52px;
+  font-size: 14px;
+  border-bottom: 1px solid #3e4d6c;
+  box-sizing: border-box;
+  th{
+    padding: 0;
+  }
+}
+.tr{
+  height: 47px;
+  line-height: 52px;
+  font-size: 14px;
+  border-bottom: 1px solid #3e4d6c;
+  box-sizing: border-box;
+  td{
+    text-align: center;
+  }
+}
+.color{
+  color: #155ecc;
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,263 @@
+.Box{
+  width:100%;
+  height:100%;
+  border:1px solid #029cfe;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:0 0.9rem;
+  margin:0 auto;
+  padding-bottom: 20px;
+  .top{
+    margin-bottom:0.9rem;
+    .header{
+      height:1.2rem;
+      line-height:1.2rem;
+      text-align:right;
+      img{
+        height:96%;
+        width:auto;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+    }
+    .topLeft,.topRight{
+      display:inline-block;
+      vertical-align: top;
+    }
+    .topLeft{
+      width:15%;
+      height:100%;
+      text-align:center;
+    }
+    .topRight{
+      width:85%;
+      table{
+        width:100%;
+        td,tr{
+          border-collapse: collapse;
+          border:1px solid #153358;
+          height:1.6rem;
+          line-height:1.6rem;
+          font-size:0.7rem;
+          color:#848b99;
+        }
+        td{
+          padding-left:10px;
+        }
+      }
+    }
+  }
+  .bottom{
+    border:1px solid #0a3061;
+    height:auto;
+    ul{
+      height:1.8rem;
+      line-height:1.8rem;
+      font-size:0.7rem;
+      border-bottom: 1px solid #10457a;
+      padding-bottom:3px;
+      li{
+        display:inline-block;
+        vertical-align: top;
+        padding:0 0.6rem;
+        color:#555e6f;
+        cursor: pointer;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .active{
+        border-bottom: 4px solid #1d83c6;
+        color:#1d83c6;
+      }
+    }
+    .leftContent,.rightContent{
+      display:inline-block;
+      vertical-align: top;
+      height:93.5%;
+    }
+    .leftContent{
+      width:68%;
+    }
+    .rightContent{
+      width:32%;
+      background:#062446;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border-width:0 0 0 1px;
+      border-style:solid;
+      border-color:#052a54;
+      dl{
+        width:90%;
+        margin: 0 auto;
+        font-size:0.7rem;
+        border-bottom:1px solid #052a54;
+        height:2.9rem;
+        line-height:2.9rem;
+        dt,dd{
+          display:inline-block;
+          vertical-align: top;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        dt{
+          width:30%;
+          padding-left:1.2rem;
+        }
+      }
+      .rightTopHeader{
+        width:100%;
+        height:5.8rem;
+        dt{
+          height:5.8rem;
+          line-height:5.8rem;
+          text-align: center;
+          width:48%;
+          img{
+            vertical-align: middle;
+          }
+        }
+        dd{
+          width:52%;
+          height:100%;
+          padding-top:1rem;
+          p{
+            height:1.4rem;
+            line-height:1.4rem;
+            color:#7c8ba0;
+          }
+        }
+      }
+    }
+  }
+  .forImage{
+    padding:1rem;
+    text-align:center;
+    overflow: hidden;
+    img{
+      max-width:100%;
+      height:auto;
+      position:relative;
+      transform-origin: center center;
+      animation-duration:2s;
+      animation-iteration-count:1;
+    }
+    .img0{
+      animation-name:mymove0;
+    }
+    .img1{
+      animation-name:mymove1;
+    }
+    .img2{
+      animation-name:mymove2;
+    }
+    .img3{
+      animation-name:mymove3;
+    }
+    .img4{
+      animation-name:mymove4;
+    }
+    .img5{
+      animation-name:mymove5;
+    }
+    .img6{
+      animation-name:mymove6;
+    }
+  }
+  @keyframes mymove
+  {
+    from {
+      opacity:0.2;
+    }
+    to {
+      opacity:1;
+    }
+  }
+  @keyframes mymove0
+   {
+     from {
+       opacity:0.5;
+       left:-400px;
+     }
+     to {
+       opacity:1;
+       left:0;
+     }
+   }
+  @keyframes mymove1
+  {
+    from {
+      opacity:0.5;
+      top:-400px;
+    }
+    to {
+      opacity:1;
+      top:0;
+    }
+  }
+  @keyframes mymove2
+  {
+    from {
+      opacity:0.5;
+      right:-400px;
+    }
+    to {
+      opacity:1;
+      right:0;
+    }
+  }
+  @keyframes mymove3
+  {
+    from {
+      opacity:0.5;
+      bottom:-400px;
+    }
+    to {
+      opacity:1;
+      bottom:0;
+    }
+  }
+  @keyframes mymove4
+  {
+    from {
+      opacity:0.5;
+      bottom:-400px;
+      transform: rotate(0deg);
+    }
+    to {
+      opacity:1;
+      bottom:0;
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes mymove5
+  {
+    from {
+      opacity:0.5;
+      top:-400px;
+    }
+    to {
+      opacity:1;
+      top:0;
+    }
+  }
+  @keyframes mymove6
+  {
+    from {
+      opacity:0.5;
+      right:-400px;
+    }
+    to {
+      opacity:1;
+      right:0;
+    }
+  }
+  .allContent{
+    animation-name:mymove;
+    animation-duration:2s;
+    animation-iteration-count:1;
+  }
+}

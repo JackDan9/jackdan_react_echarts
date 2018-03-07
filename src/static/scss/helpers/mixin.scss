@@ -1,0 +1,41 @@
+// 设置输入框placeholder的颜色
+@mixin placeholder($color) {
+  :-moz-placeholder {
+    color: $color;
+  }
+
+  ::-moz-placeholder {
+    color: $color;
+  }
+
+  input:-ms-input-placeholder {
+    color: $color;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin scrollbar($color, $width: 8px, $background: #999) {
+  ::-webkit-scrollbar {
+    width: $width;
+    height: $width;
+    background-color: $background;
+  }
+
+  /*定义滚动条轨道 内阴影+圆角*/
+  /* ::-webkit-scrollbar-track
+   {
+       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+       border-radius: 10px;
+       background-color: #F5F5F5;
+   }*/
+
+  /*定义滑块 内阴影+圆角*/
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+    background-color: $color;
+  }
+}

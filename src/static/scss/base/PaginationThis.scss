@@ -1,0 +1,30 @@
+#PaginationThis{
+  text-align:center;
+  padding-bottom: 30px;
+  vertical-align: top;
+  .rc-pagination-item{
+    border-color:#a0e1fa;
+    a{
+      color:#40c1f3;
+    }
+  }
+  .rc-pagination-pre{
+    >a{
+      //color:#46c3f4;
+      color:red!important;
+    }
+  }
+  .rc-pagination-item-active{
+    background-color:#40c1f3;
+    border-color:#40c1f3;
+    a{
+      color:#fff;
+    }
+  }
+  .rc-pagination-prev a, .rc-pagination-next a{
+    color:#46c3f4;
+  }
+  .rc-pagination-disabled a{
+    color:#ccc;
+  }
+}

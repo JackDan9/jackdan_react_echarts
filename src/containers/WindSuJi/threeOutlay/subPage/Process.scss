@@ -1,0 +1,221 @@
+.processContainer {
+  width: 100%;
+  height: 100%;
+  background: #081d48;
+  border: 1px solid #009dff;
+  header {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #083e6a;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    .numS {
+      font-size: 25px;
+      margin-left: 76px;
+      span {
+        color: #fca204;
+      }
+    }
+
+    .filterS {
+      margin-right: 92px;
+      font-size: 18px;
+      i {
+        font-size: 22px;
+        color: #027ebe;
+        margin-right: 7px;
+      }
+    }
+  }
+
+  .tableContainer {
+    width: 98%;
+    color: #acb8b6;
+    font-size: 17px;
+    margin: 33px auto 26px;
+    border: 1px solid #0984d2;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+.tableHeader {
+  padding-left: 90px;
+  height: 58px;
+  line-height: 58px;
+  border-bottom: 1px solid #027dcd;
+  box-shadow: 0px 0px 10px #027dcd inset;
+  span {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    &:nth-child(1) {
+      width: 10%;
+    }
+    &:nth-child(2) {
+      width: 15%;
+    }
+    &:nth-child(3) {
+      width: 6%;
+    }
+    &:nth-child(4) {
+      width: 15%;
+    }
+    &:nth-child(5) {
+      width: 6%;
+    }
+    &:nth-child(6) {
+      width: 12%;
+    }
+    &:nth-child(7) {
+      width: 9%;
+    }
+    &:nth-child(8) {
+      width: 12%;
+    }
+    &:nth-child(9) {
+      width: 11%;
+    }
+  }
+}
+@media screen and (max-width: 1366px) {
+  .tableHeader {
+    span {
+      &:nth-child(1) {
+        width: 7%!important;
+      }
+      &:nth-child(2) {
+        width: 19%!important;
+      }
+    }
+  }
+  .tableBody {
+    .listIte {
+      span {
+        &:nth-child(3) {
+          width: 8%!important;
+        }
+      }
+    }
+  }
+}
+
+.tableBody {
+  width: 100%;
+  font-size: 13px;
+  height: 634px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-y: auto;
+  .listIte {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    line-height: 88px;
+    .iconIte {
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      width: 5%;
+      height: 88px;
+      color: #037fd9;
+      i{
+        font-size: 32px;
+      }
+    }
+    .list {
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      width: calc(100% - 5%);
+      border-bottom: 1px solid #037fd9;
+    }
+    span {
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      &:nth-child(1) {
+        width: 10%;
+      }
+      &:nth-child(2) {
+        width: 15%;
+      }
+      &:nth-child(3) {
+        width: 6%;
+      }
+      &:nth-child(4) {
+        width: 15%;
+      }
+      &:nth-child(5) {
+        width: 6%;
+      }
+      &:nth-child(6) {
+        width: 12%;
+      }
+      &:nth-child(7) {
+        width: 9%;
+      }
+      &:nth-child(8) {
+        width: 12%;
+      }
+      &:nth-child(9) {
+        width: 13%;
+      }
+    }
+    .checkBtn {
+      display: inline-block;
+      width: 100px;
+      height: 40px;
+      border: none;
+      color: #fff;
+      line-height: 40px;
+      background-color: #0183d9;
+      border-radius: 8px;
+      cursor: pointer;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}
+
+.footerPagination {
+  text-align: center;
+  margin: 0 0 10px 0;
+  >ul {
+    display: inline-block;
+  }
+}
+
+.detailShow {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  transition: .5s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 1px;
+  .useD,.processT {
+    font-size: 16px;
+    text-align: left;
+    line-height: 35px;
+    color: #acb8b6;
+    height: auto;
+  }
+  .processI{
+    width: 100%;
+    color: #acb8b6;
+    height: auto;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
