@@ -21,15 +21,17 @@ export default (function () {
 
 
             // 图片缓冲
-           /* let img = document.createElement('img');
-            img.setAttribute('src', loadingImg);
-            img.style.position = 'absolute';
-            img.style.top = '50%';
-            img.style.left = '50%';
-            img.style.marginTop = '-16px';
-            img.style.marginLeft = '-16px';
+            /* 
+                let img = document.createElement('img');
+                img.setAttribute('src', loadingImg);
+                img.style.position = 'absolute';
+                img.style.top = '50%';
+                img.style.left = '50%';
+                img.style.marginTop = '-16px';
+                img.style.marginLeft = '-16px';
 
-            loading.appendChild(img);*/
+                loading.appendChild(img);
+            */
             document.body.appendChild(loading);
         }
         return loading;

@@ -1,19 +1,24 @@
- # jackdan_react_echarts
+# jackdan_react_echarts
  
- ------
+------
  
- ## Build Setup
- ```
+## Build Setup
+
+```
  # install dependencies
  npm install
+ # recommended install dependencies
+ cnpm install
  # serve with hot reload at http://localhost:12347/#/main/tworesponsibilities/index
  yarn run dev
  # rebuild it
  yarn run build
- ```
+```
  
- ------
+------
  
- ## Suggestions
- - If you have more suggestions, please help me! Thanks!
+## Star
+- If you like it, please give me a star.
+- If you don't like it, please give me suggestions.(1835812864@qq.com)
+
  
