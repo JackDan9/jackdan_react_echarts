@@ -1,5 +1,3 @@
-// 上帝保佑,永无bug
-
 import React, {Component} from "react"
 
 import style from './style.scss'

@@ -1,5 +1,5 @@
 {
-    "name": "jackdan_react_echarts",
+    "name": "react_echarts",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -9,7 +9,7 @@
         "mock": "node --harmony ./mock/server.js",
         "build": " ./node_modules/.bin/rimraf ./static && ./node_modules/.bin/webpack --progress --color --config webpack.prod.config.js"
     },
-    "author": "A team",
+    "author": "jackdan",
     "license": "ISC",
     "devDependencies": {
         "Utils": "^1.0.39",

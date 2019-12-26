@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './Rodal.scss';
 
 const { PropTypes, Component } = React;

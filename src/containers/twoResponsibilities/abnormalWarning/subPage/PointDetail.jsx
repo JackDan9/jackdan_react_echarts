@@ -1,6 +1,7 @@
-import React, {Component} from "react";
-import style from "./PointDetail.scss";
+import React, { Component } from "react";
+
 import Roder from './Point_Rodar';
+import style from "./PointDetail.scss";
 
 export default class PointDetail extends Component {
   constructor(props) {

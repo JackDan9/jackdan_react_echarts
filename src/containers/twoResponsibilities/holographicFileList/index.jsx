@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import styles from './style.scss'
 
 const keys = ['姓名', '身份证号', '性别', '年龄', '地区', '工作单位', '职务']

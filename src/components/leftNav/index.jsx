@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import style from './style.scss'
 import { NavLink, Link } from 'react-router-dom'
 

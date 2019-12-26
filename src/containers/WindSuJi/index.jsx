@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import style from './style.scss'
+
 import LeftNav from '../../components/leftNav'
+import style from './style.scss'
 
 const leftNavsTwo = [
   {

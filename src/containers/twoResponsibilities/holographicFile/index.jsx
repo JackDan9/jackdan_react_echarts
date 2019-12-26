@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import styles from './style.scss'
+
 import Loadding from '../holographicFileDetail/subpage/loadding'
+import styles from './style.scss'
 
 class App extends Component {
   state = {

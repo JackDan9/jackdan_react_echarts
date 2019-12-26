@@ -1,7 +1,8 @@
-import React,{Component} from 'react'
+import React, { Component } from 'react'
+import echarts from 'echarts'
+
 import './index.scss'
 import Rodal from '../../../../../components/Rodal/Rodal'
-import echarts from 'echarts'
 import resource from '../../../../../util/resource'
 
 export default class ModalForIndex extends Component {

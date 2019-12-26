@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import style from './relation.scss'
 import touxiang from '../image/smallPeople.png'
 

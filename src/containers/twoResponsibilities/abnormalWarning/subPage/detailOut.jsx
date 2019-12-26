@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+
 import style from "./detailOut.scss";
 
 export default class Warn extends Component {

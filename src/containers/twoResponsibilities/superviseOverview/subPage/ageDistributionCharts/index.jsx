@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import echarts from 'echarts'
+
 import style from './index.scss'
 
 

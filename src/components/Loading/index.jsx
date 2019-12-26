@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 import style from '../noData/style.scss';
 import data from './IMAGES/35.gif'
 

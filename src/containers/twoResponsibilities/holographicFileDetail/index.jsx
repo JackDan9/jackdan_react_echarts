@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import style from "./style.scss"
+
 import smallPeople from "./image/smallPeople.png"
 import bigPeople from "./image/bigPeople.png"
 import Return from "./image/return.png"
@@ -12,6 +12,7 @@ import kaohe from "./image/kaohe.png"
 import churujing from "./image/churujing.png"
 import company from "./image/company.png"
 import Info from "./subpage/info"
+import style from "./style.scss"
 
 const NavData = [
   {

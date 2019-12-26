@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import caican from "../image/caican.gif"
 import gongzuo from "../image/gongzuo.png"
 import xueli from "../image/xueli.png"
@@ -6,6 +7,7 @@ import punish from "../image/punish.png"
 import kaohe from "../image/kaohe.png"
 import churujing from "../image/churujing.png"
 import company from "../image/company.png"
+
 export default class Loadding extends Component{
   initData = [
     {

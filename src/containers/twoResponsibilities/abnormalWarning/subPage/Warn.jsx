@@ -1,6 +1,7 @@
 import React, {Component} from "react";
-import style from "./warn.scss";
+
 import DetailOut from './detailOut';
+import style from "./warn.scss";
 
 const headImg = require('../Img/headImg.png');
 

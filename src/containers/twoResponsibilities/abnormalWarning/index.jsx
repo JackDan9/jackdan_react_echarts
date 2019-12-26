@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import style from "./style.scss";
+
 import Timer from './subPage/Timer';
 import Point from './subPage/Point';
 import Warn from './subPage/Warn';
+import style from "./style.scss";
 
 const options = ['房产','车辆','低保','优抚','经商办企业'
   ,'扶贫','私自出国','信访举报','四风','八项规定'];

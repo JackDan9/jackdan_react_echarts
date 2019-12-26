@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 import data from './images/mess.png';
 import style from './style.scss';
 

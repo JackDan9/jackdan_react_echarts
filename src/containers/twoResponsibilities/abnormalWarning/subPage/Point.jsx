@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import style from "./point.scss";
+
 import PointDetail from './PointDetail';
+import style from "./point.scss";
 
 export default class Point extends Component {
   constructor(props) {

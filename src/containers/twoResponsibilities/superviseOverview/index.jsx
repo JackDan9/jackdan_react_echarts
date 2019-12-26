@@ -1,11 +1,12 @@
 import React, { Component } from "react"
+import moment from 'moment'
+
 import GenderCharts from './subPage/genderCharts'
 import PlaceCharts from './subPage/placeCharts'
 import TitleLevelCharts from './subPage/titleLevelCharts'
 import AgeDistributionCharts from './subPage/ageDistributionCharts'
 import DegreeCharts from './subPage/degreeCharts'
 // import ModalForIndex from './subPage/ModalForIndex'
-import moment from 'moment'
 import style from './index.scss'
 
 export default class supervise extends Component {

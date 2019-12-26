@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import style from './info.scss'
 import wenhao from '../image/wenhao.png'
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import style from './style.scss';
+
 import Bar from './subPage/Bar'
 import Line from './subPage/Line'
 import Dger from './subPage/Pie/dger'
@@ -8,6 +8,7 @@ import Table from './subPage/Table'
 import Double from './subPage/Pie/double'
 import Map from './subPage/Map'
 import Select from '../../WindSuJi/fourWindBus/subPage/Select'
+import style from './style.scss';
 
 const DataList = {
   all: {

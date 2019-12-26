@@ -1,7 +1,8 @@
-import React, {Component} from "react"
-import ProcessBar from '../images/process.png'
+import React, { Component } from "react"
+import Pagination from 'rc-pagination'
+
 import styles from './Process.scss'
-import Pagination from 'rc-pagination';
+import ProcessBar from '../images/process.png'
 
 export default class Process extends Component {
   constructor(props) {
