@@ -30,7 +30,6 @@
         "json-loader": "^0.5.4",
         "less": "^2.7.1",
         "less-loader": "^2.2.3",
-        "node-sass": "^4.5.3",
         "open-browser-webpack-plugin": "0.0.2",
         "postcss-loader": "^2.0.6",
         "resolve-url-loader": "^2.0.3",

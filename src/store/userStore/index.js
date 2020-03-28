@@ -21,6 +21,11 @@
  * .............................................
  *          佛祖保佑             永无BUG
  */
+
+/**
+ * mobx vs redux
+ * 
+ */
 import { observable, action, computed, autorun } from 'mobx'
 
 import { TOKEN, ROLES, USER } from 'constants/storage'

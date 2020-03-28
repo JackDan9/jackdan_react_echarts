@@ -107,7 +107,7 @@ export default class Map extends Component {
           {name: '大方县', value: this.state.df ? 0 : 100},
           {name: '金沙县', value: 100},
           {name: '七星关区', value: 100}
-          ]
+        ]
       }]
     }
 
