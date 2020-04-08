@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import echarts from 'echarts'
 
-export default class Map extends Component {
+export default class Map extends React.Component {
 
   constructor(props) {
     super(props)
