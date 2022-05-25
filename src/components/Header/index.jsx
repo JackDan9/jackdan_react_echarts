@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { NavLink, Link , withRouter} from 'react-router-dom'
 
 import style from './style.scss'
-import logo from './image/logo.png'
+import logo from './image/logo.svg'
 
 const navs = [
   {
@@ -55,7 +55,7 @@ class Header extends React.Component {
         <div className={style.leftLogo}>
           <img src={logo} alt=""/>
         </div>
-        <div className={style.rightNav}>
+        {/* <div className={style.rightNav}>
           <div className={style.Nav}>
             {
               navs.map((obj,index) => {
@@ -66,7 +66,7 @@ class Header extends React.Component {
           <div className={style.user}>
             Admin<span>|</span>个人中心
           </div>
-        </div>
+        </div> */}
       </div>
     )
   }

@@ -126,7 +126,7 @@ module.exports = {
             filename: "js/[name].js"
         }),
         new HtmlWebpackPlugin({ 
-            favicon: path.resolve("./src/static/images/logo.png"),
+            favicon: path.resolve("./src/static/images/logo.svg"),
             template: "./src/index.html", // 模板文件
             filename: "./index.html" // 产出后的文件名称
         }),

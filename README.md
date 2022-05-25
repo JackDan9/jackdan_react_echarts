@@ -1,7 +1,15 @@
 # jackdan_react_echarts
  
 ------
- 
+
+## 功能列表
+
+- [X] 自定义画布
+- [X] 可拖拽效果
+
+## 功能参照
+
+![drag](https://developer.mozilla.org/zh-CN/docs/Web/API/HTML_Drag_and_Drop_API/Drag_operations)
 ## Build Setup
 
 ```

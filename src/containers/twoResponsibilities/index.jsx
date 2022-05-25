@@ -25,10 +25,13 @@ export default class twoRes extends Component {
   render() {
     return (
       <div className={style.Box}>
-        <div className={style.Nav}>
+        {/* <div className={style.Nav}>
           <LeftNav leftNav={leftNavsFirst} />
+        </div> */}
+        <div className={style.container}>
+          {/* {this.props.children} */}
+          <canvas></canvas>
         </div>
-        <div className={style.container}>{this.props.children}</div>
       </div>
     )
   }
