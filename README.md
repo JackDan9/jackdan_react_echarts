@@ -10,6 +10,8 @@
 ## 功能参照
 
 ![drag](https://developer.mozilla.org/zh-CN/docs/Web/API/HTML_Drag_and_Drop_API/Drag_operations)
+![DataView](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/DataView)
+
 ## Build Setup
 
 ```

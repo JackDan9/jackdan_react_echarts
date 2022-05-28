@@ -22,15 +22,33 @@ const leftNavsFirst = [
 ]
 
 export default class twoRes extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  componentDidMount() {
+    // 获取画布
+    const mainCanvas = document.getElementById("mainCanvas");
+    const ctx = mainCanvas.getContext("2d");
+
+    const gridSize = 20;
+
+    const canvasWidth = ctx.canvas.width;
+    const canvasHeight = ctx.canvas.height;
+    
+    console.log("mainCanvas: ", mainCanvas);
+    console.log("ctx: ", ctx);
+  }
+
   render() {
     return (
       <div className={style.Box}>
         {/* <div className={style.Nav}>
           <LeftNav leftNav={leftNavsFirst} />
         </div> */}
-        <div className={style.container}>
+        <div className={style.container} style={{inset: '109px 40px 35px 225px', background: 'transparent'}}>
           {/* {this.props.children} */}
-          <canvas></canvas>
+          <canvas style={{ position: 'fixed', width: 1167, height: 332, background: 'rgb(229, 229, 229)'}} id="mainCanvas" width={2334} height={664}></canvas>
         </div>
       </div>
     )

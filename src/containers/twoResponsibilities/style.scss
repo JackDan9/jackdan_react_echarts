@@ -12,9 +12,12 @@
     background:#091e4b;
     color:#fff;
   }
-  .container{
-    width: 90.8%;
-    color:#fff;
-    background: transparent;
+  .container {
+    position: absolute;
+    overflow: scroll;
+    scrollbar-width: thin;
+    // width: 90.8%;
+    // color:#fff;
+    // background: transparent;
   }
 }
