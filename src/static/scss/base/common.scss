@@ -5,6 +5,8 @@
     text-overflow: ellipsis;
 }
 
+
+
 html{
     font-size:20px;
 }
@@ -38,4 +40,10 @@ article, aside, blockquote, body, button, dd, details, div, dl, dt, fieldset, fi
 *, ::after, ::before {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }

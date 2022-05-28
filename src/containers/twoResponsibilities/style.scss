@@ -14,10 +14,11 @@
   }
   .container {
     position: absolute;
-    overflow: scroll;
+    width: 100%;
+    // overflow: scroll;
     scrollbar-width: thin;
     // width: 90.8%;
     // color:#fff;
-    // background: transparent;
+    background: transparent;
   }
 }

@@ -11,12 +11,12 @@ export default class App extends Component {
     
     return (
       <div id={style["home-page"]} style={Height}>
-        <div className={style.container}>
-          <Header />
-          <div className={style.Box}>
+        {/* <div className={style.container}> */}
+          {/* <Header /> */}
+          {/* <div className={style.Box}> */}
             {this.props.children}
-          </div>
-        </div>
+          {/* </div> */}
+        {/* </div> */}
       </div>
     )
   }
