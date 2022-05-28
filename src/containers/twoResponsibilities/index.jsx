@@ -31,11 +31,30 @@ export default class twoRes extends Component {
     const mainCanvas = document.getElementById("mainCanvas");
     const ctx = mainCanvas.getContext("2d");
 
-    const gridSize = 20;
+    const gridSize = 50;
 
     const canvasWidth = ctx.canvas.width;
     const canvasHeight = ctx.canvas.height;
-    
+
+    const xLineTotals = Math.floor(canvasHeight / gridSize); // 计算需要绘画的x轴条数
+    for (let i = 0; i < xLineTotals; i++) {
+      ctx.beginPath(); // 开启路径，设置不同的样式
+      ctx.moveTo(0, gridSize * i); // 起点位置
+      ctx.lineTo(canvasWidth, gridSize * i - 0.5); // 终点位置
+      ctx.strokeStyle = "#ccc"; // 每个线条的颜色
+      ctx.stroke();
+    }
+
+
+    const yLineTotals = Math.floor(canvasWidth / gridSize);
+    for (let j = 0; j < yLineTotals; j++) {
+      ctx.beginPath();
+      ctx.moveTo(gridSize * j, 0);
+      ctx.lineTo(gridSize * j, canvasHeight)
+      ctx.strokeStyle = "#ccc";
+      ctx.stroke();
+    }
+
     console.log("mainCanvas: ", mainCanvas);
     console.log("ctx: ", ctx);
   }
