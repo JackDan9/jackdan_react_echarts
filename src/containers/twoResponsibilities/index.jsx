@@ -80,7 +80,7 @@ export default class twoRes extends Component {
         </div> */}
         <div className={style.container} style={{ inset: '109px 40px 35px 225px', background: 'rgb(229, 229, 229)' }}>
           {/* {this.props.children} */}
-          <canvas style={{ position: 'fixed', margin: 32, width: 1167, height: 332, background: 'rgb(255, 255, 255)'}} id="mainCanvas" width={2334} height={664}></canvas>
+          <canvas className={style.mainCanvas} style={{ position: 'fixed', margin: 32, width: 1167, background: 'rgb(255, 255, 255)'}} id="mainCanvas" width={2334} height={664}></canvas>
         </div>
       </div>
     )
