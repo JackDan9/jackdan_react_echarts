@@ -31,7 +31,7 @@ export default class twoRes extends Component {
     const mainCanvas = document.getElementById("mainCanvas");
     const ctx = mainCanvas.getContext("2d");
 
-    const gridSize = 82;
+    const gridSize = 83;
 
     const canvasWidth = ctx.canvas.width;
     const canvasHeight = ctx.canvas.height;
@@ -45,20 +45,29 @@ export default class twoRes extends Component {
       ctx.beginPath(); // 开启路径，设置不同的样式
       ctx.moveTo(0, gridSize * i); // 起点位置
       ctx.lineTo(canvasWidth, gridSize * i); // 终点位置
-      ctx.strokeStyle = "#ccc"; // 每个线条的颜色
+      ctx.strokeStyle = "#000"; // 每个线条的颜色
       ctx.stroke();
     }
+
+    // for(let k = 0; k <= xLineTotals; k++) {
+    //   ctx.beginPath();
+    //   ctx.moveTo(0, gridSize * i);
+    //   ctx.lineTo(canvasWidth, (gridSize * i) / 2);
+    //   ctx.strokeStyle = "#ccc";
+    //   ctx.stroke();
+    // }
 
 
     const yLineTotals = Math.floor(canvasWidth / gridSize);
-    for (let j = 0; j <= yLineTotals + 1; j++) {
+    for (let j = 0; j <= yLineTotals; j++) {
       ctx.beginPath();
       ctx.moveTo(gridSize * j, 0);
       ctx.lineTo(gridSize * j, canvasHeight)
-      ctx.strokeStyle = "#ccc";
+      ctx.strokeStyle = "#000";
       ctx.stroke();
     }
     // ctx.textAlign = "center";
+    
     console.log("mainCanvas: ", mainCanvas);
     console.log("ctx: ", ctx);
   }
@@ -69,9 +78,9 @@ export default class twoRes extends Component {
         {/* <div className={style.Nav}>
           <LeftNav leftNav={leftNavsFirst} />
         </div> */}
-        <div className={style.container} style={{inset: '109px 40px 35px 225px', background: 'transparent'}}>
+        <div className={style.container} style={{ inset: '109px 40px 35px 225px', background: 'rgb(229, 229, 229)' }}>
           {/* {this.props.children} */}
-          <canvas style={{ position: 'fixed', padding: 36, width: 1167, height: 332, background: 'rgb(229, 229, 229)'}} id="mainCanvas" width={2334} height={664}></canvas>
+          <canvas style={{ position: 'fixed', margin: 32, width: 1167, height: 332, background: 'rgb(255, 255, 255)'}} id="mainCanvas" width={2334} height={664}></canvas>
         </div>
       </div>
     )
