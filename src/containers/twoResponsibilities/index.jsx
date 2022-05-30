@@ -42,10 +42,26 @@ export default class twoRes extends Component {
 
     for (let i = 0; i <= xLineTotals + 1; i++) {
       ctx.beginPath(); // 开启路径，设置不同的样式
+
       ctx.moveTo(0, gridSize * i + 0.5); // 起点位置
       ctx.lineTo(canvasWidth, gridSize * i + 0.5); // 终点位置
       ctx.strokeStyle = "#000"; // 每个线条的颜色
       ctx.stroke();
+
+      ctx.closePath();
+    }
+
+    for (let i = 0; i <= 2 * xLineTotals; i++) {
+      ctx.beginPath();
+
+      ctx.setLineDash([5, 5]);
+      
+      ctx.moveTo(0, gridSize / 2 * i);
+      ctx.lineTo(canvasWidth, gridSize / 2 * i);
+      ctx.strokeStyle = "rgba(209, 209, 209, 0.8)";
+      ctx.stroke();
+
+      ctx.closePath();
     }
 
     const yLineTotals = Math.floor(canvasWidth / gridSize);
@@ -54,15 +70,30 @@ export default class twoRes extends Component {
     console.log("canvasHeight: ", canvasHeight);
     console.log("canvasWidth: ", canvasWidth);
     console.log("yLineTotals: ", yLineTotals);
-    for (let j = 0; j <= yLineTotals; j++) {
+
+    for (let j = 0; j <= yLineTotals + 1; j++) {
       ctx.beginPath();
+
       ctx.moveTo(gridSize * j, 0);
       ctx.lineTo(gridSize * j, canvasHeight)
       ctx.strokeStyle = "#000";
       ctx.stroke();
+
+      ctx.closePath();
     }
 
-    // ctx.textAlign = "center";
+    for (let j = 0; j <= 2 * yLineTotals; j++) {
+      ctx.beginPath();
+
+      ctx.setLineDash([5, 5]);
+
+      ctx.moveTo(gridSize / 2 * j, 0);
+      ctx.lineTo(gridSize / 2 * j, canvasHeight);
+      ctx.strokeStyle = "rgba(209, 209, 209, 0.8)";
+      ctx.stroke();
+
+      ctx.closePath();
+    }
     
     console.log("mainCanvas: ", mainCanvas);
     console.log("ctx: ", ctx);
