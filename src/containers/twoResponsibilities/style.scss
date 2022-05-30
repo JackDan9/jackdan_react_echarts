@@ -25,6 +25,7 @@
     .mainCanvas {
       height: calc(100% - 208px);
       // z-index: -1;
+      overflow: scroll;
     }
   }
 }
