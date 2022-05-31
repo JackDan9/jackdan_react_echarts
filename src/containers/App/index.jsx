@@ -10,7 +10,7 @@ export default class App extends Component {
     }
     
     return (
-      <div id={style["home-page"]} style={Height}>
+      <div id={style["home-page"]}>
         {/* <div className={style.container}> */}
           {/* <Header /> */}
           {/* <div className={style.Box}> */}

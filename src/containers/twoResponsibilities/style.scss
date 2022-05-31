@@ -1,10 +1,10 @@
 .Box{
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  // display: flex;
+  // justify-content: space-between;
+  
+  // -webkit-box-sizing: border-box;
+  // -moz-box-sizing: border-box;
+  // box-sizing: border-box;
   // padding-bottom: 20px;
   // .Nav{
   //   width: 9.2%;
@@ -12,19 +12,20 @@
   //   background:#091e4b;
   //   color:#fff;
   // }
+  // height: 100%;
+  // width: 100%;
   .container {
     position: absolute;
     width: 100%;
     height: calc(100% - 144px);
     overflow: scroll;
     scrollbar-width: thin;
-    // width: 90.8%;
-    // color:#fff;
     background: transparent;
+    z-index: -2;
 
     .mainCanvas {
       height: calc(100% - 208px);
-      // z-index: -1;
+      z-index: -1;
       overflow: scroll;
     }
   }
