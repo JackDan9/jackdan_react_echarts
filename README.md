@@ -8,11 +8,13 @@
 - [X] 可拖拽效果
 - [X] 自适应屏幕分辨率(目前支持是1080)
 - [X] 三列布局
+- [X] 中国地图
 
 ## 功能参照
 
 ![drag](https://developer.mozilla.org/zh-CN/docs/Web/API/HTML_Drag_and_Drop_API/Drag_operations)
 ![DataView](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/DataView)
+![中国地图geojson]()
 
 ## Build Setup
 

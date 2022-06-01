@@ -12,6 +12,7 @@ class Map extends Component {
   constructor(props) {
     super(props)
     this.myChart = null;
+    // this.geoJson = null
   }
 
   componentDidMount() {
@@ -19,10 +20,11 @@ class Map extends Component {
     this.myChart = echarts.init(chartDom);
     var option;
 
-    let geoJson = require('../../../static/json/geo.json');
-    console.log("geoJson:", geoJson);
+    let chinaGeoJson = require('../../../static/json/china.json');
+    // this.geoJson = geoJson;
 
-    echarts.registerMap("china", geoJson);
+
+    echarts.registerMap("china", chinaGeoJson);
 
     var data = [
       { name: '甘肃省', value: 9 },
@@ -457,23 +459,36 @@ class Map extends Component {
       ]
     };
 
-    myChart.hideLoading();
-    option && myChart.setOption(option);
+    this.myChart.hideLoading();
+    option && this.myChart.setOption(option);
 
     this.chinaConfigure();
+
+    // if(this.myChart) {
+    //   this.draw('');
+    // } else {
+    //   const _this = this;
+    //   _this.myChart = echarts.init(document.getElementById(""))
+    // }
   }
 
 
   chinaConfigure = () => {
     const _this = this;
     window.onresize = this.myChart.resize();
+    this.myChart.on('click', function(params) {
+      // _this.geoJson,
+      console.log("params name: ", params.name);
+      console.log("params: ", params);
+      console.log("geoJson: ", _this.geoJson);
+    })
   }
   
 
   render() {
     return (
       <div className={style.mapContainer}>
-        <div id="main" style={{width: 1000, height: 800}}></div>
+        <div id="main" style={{width: '1000', height: '800'}}></div>
       </div>
     )
   }
