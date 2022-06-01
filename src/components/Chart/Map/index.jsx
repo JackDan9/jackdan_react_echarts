@@ -438,20 +438,24 @@ class Map extends Component {
       },
       tooltip: {
         trigger: 'item',
-        formatter: '{b}<br/>{c} (万亿 / km2)'
+        formatter: '{b}<br/>¥{c} (万亿)'
       },  
       series: [
         {
-          name: 'GDP总值/人均总值',
+          name: 'GDP',
           type: 'map',
           map: 'china',
           data: convertData(data),
+          encode: {
+            value: 2
+          },
           label: {
             show: false
           },
         }
       ]
     };
+    
     myChart.hideLoading();
     option && myChart.setOption(option);
   }

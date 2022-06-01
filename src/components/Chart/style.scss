@@ -1,4 +1,21 @@
 .chartContainer {
   width: 100%;
   height: 100%;
+  display: flex;
+
+  .leftContainer {
+    width: 300rem;
+    height: 100%;
+    border: 1px solid;
+  }
+
+  .centerContainer {
+    flex: 1;
+  }
+
+  .rightContainer {
+    width: 300rem;
+    height: 100%;
+    border: 1px solid;
+  }
 }
