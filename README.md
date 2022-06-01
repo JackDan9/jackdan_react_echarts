@@ -13,14 +13,14 @@
 
 ## 功能参照
 
-![drag](https://developer.mozilla.org/zh-CN/docs/Web/API/HTML_Drag_and_Drop_API/Drag_operations)
-![DataView](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/DataView)
+- [drag](https://developer.mozilla.org/zh-CN/docs/Web/API/HTML_Drag_and_Drop_API/Drag_operations)
+- [DataView](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/DataView)
 
 ## Geo 文件
 
 ### 中国地图
 
-![中国地图geojson](https://github.com/JackDan9/jackdan_react_echarts/blob/master/src/static/json/china.json)
+- [中国地图geojson](https://github.com/JackDan9/jackdan_react_echarts/blob/master/src/static/json/china.json)
 
 
 ## Build Setup
