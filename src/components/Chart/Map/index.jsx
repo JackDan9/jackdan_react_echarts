@@ -11,11 +11,12 @@ import style from './style.scss';
 class Map extends Component {
   constructor(props) {
     super(props)
+    this.myChart = null;
   }
 
   componentDidMount() {
     var chartDom = document.getElementById('main');
-    var myChart = echarts.init(chartDom);
+    this.myChart = echarts.init(chartDom);
     var option;
 
     let geoJson = require('../../../static/json/geo.json');
@@ -156,7 +157,7 @@ class Map extends Component {
       { name: '宝鸡', value: 72 },
       { name: '焦作', value: 75 },
       { name: '句容', value: 75 },
-      { name: '北京市', value: 4 },
+      { name: '北京市', value: 4, selected: true },
       { name: '徐州', value: 79 },
       { name: '衡水', value: 80 },
       { name: '包头', value: 80 },
@@ -455,17 +456,23 @@ class Map extends Component {
         }
       ]
     };
-    
+
     myChart.hideLoading();
     option && myChart.setOption(option);
+
+    this.chinaConfigure();
   }
 
+
+  chinaConfigure = () => {
+    const _this = this;
+    window.onresize = this.myChart.resize();
+  }
   
 
   render() {
     return (
       <div className={style.mapContainer}>
-        {/* <canvas id="main" width={800} height={800}></canvas> */}
         <div id="main" style={{width: 1000, height: 800}}></div>
       </div>
     )
