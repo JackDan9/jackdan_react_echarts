@@ -156,7 +156,7 @@ class Map extends Component {
       { name: '宝鸡', value: 72 },
       { name: '焦作', value: 75 },
       { name: '句容', value: 75 },
-      { name: '北京市', value: 79 },
+      { name: '北京市', value: 4 },
       { name: '徐州', value: 79 },
       { name: '衡水', value: 80 },
       { name: '包头', value: 80 },
@@ -438,7 +438,7 @@ class Map extends Component {
       },
       tooltip: {
         trigger: 'item',
-        // formatter: '{b}<br/>{c} (p / km2)'
+        formatter: '{b}<br/>{c} (万亿 / km2)'
       },  
       series: [
         {
