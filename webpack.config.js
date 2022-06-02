@@ -104,7 +104,7 @@ module.exports = {
             },
             {
                 test: /\.json$/,
-                use: ["json-loader"]
+                use: ["json-loader?outputPath=json/"]
             }
         ]
     },

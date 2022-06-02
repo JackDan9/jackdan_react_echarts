@@ -5,22 +5,6 @@
     text-overflow: ellipsis;
 }
 
-
-
-html{
-    font-size:20px;
-}
-
-body{
-    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,"\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;
-    font-size: 12px;
-    line-height: 1.5;
-    color: #515a6e;
-    background-color: #fff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 .clearfix:after{
     content:".";
     display:block;
@@ -46,4 +30,10 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,"\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;
+    line-height: 1.5;
+    color: #515a6e;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

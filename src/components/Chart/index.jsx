@@ -19,7 +19,11 @@ class Chart extends Component {
   render() {
     return (
       <div className={style.chartContainer}>
-        <div className={style.leftContainer}></div>
+        <div className={style.leftContainer}>
+          <div className={style.content}>
+            
+          </div>
+        </div>
         <div className={style.centerContainer}>
           <Map />
         </div>

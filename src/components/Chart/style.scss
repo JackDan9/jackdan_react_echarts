@@ -4,9 +4,13 @@
   display: flex;
 
   .leftContainer {
-    width: 300rem;
+    width: 2rem;
     height: 100%;
-    border: 1px solid;
+    background: yellow;
+    .content {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .centerContainer {
@@ -14,8 +18,8 @@
   }
 
   .rightContainer {
-    width: 300rem;
+    width: 2rem;
     height: 100%;
-    border: 1px solid;
+    background: blue;
   }
 }

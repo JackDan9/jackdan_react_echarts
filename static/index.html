@@ -2,15 +2,44 @@
 <html>
 
 <head>
-  <meta charset=utf-8>
-  <meta http-equiv=X-UA-Compatible content="IE=edge">
-  <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no">
-  <script type=text/javascript src="http://webapi.amap.com/maps?v=1.3&key=61ec499ca37d48934addd36e20bf93b7"></script>
-  <title>自定义图表</title>
-<link rel="shortcut icon" href=logo.png><link href=bundle.5d7a5023.css?5d7a502303f225dbf511 rel=stylesheet></head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no">
+    <script type=text/javascript src="http://webapi.amap.com/maps?v=1.3&key=61ec499ca37d48934addd36e20bf93b7"></script>
+    <script type=text/javascript defer=defer>
+        function setHtmlSize() {
+            var pageWidth = window.innerWidth;
+            if (typeof pageWidth != "number") {
+                if (document.compatMode == "number") {
+                    pageWidth = document.documentElement.clientWidth;
+                } else {
+                    pageWidth = document.body.clientWidth;
+                }
+            }
+            var fontSize = (window.innerWidth * 100) / 750;
+            if (fontSize < 40) {
+                fontSize = 40;
+            }
+            console.log("currentFontSize: ", fontSize);
+            //根据屏幕大小确定根节点字号
+            document.getElementsByTagName('html')[0].style.fontSize = fontSize + 'px';
+        }
+        function resize() {
+            setHtmlSize();
+        }
+        if (window.attachEvent) {
+            window.attachEvent("resize", resize);
+        } else if (window.addEventListener) {
+            window.addEventListener("resize", resize, false);
+        }
+        setHtmlSize();
+    </script>
+    <title>Custom Chart</title>
+<link rel="shortcut icon" href=logo.png><link href=bundle.d8ad0b11.css?d8ad0b118b3f37920819 rel=stylesheet></head>
 
 <body>
-  <div id=root></div>
-  <div id=notice></div>
-  <script type=text/javascript src=vendor.js?5d7a502303f225dbf511></script><script type=text/javascript src=bundle.5d7a5023.js?5d7a502303f225dbf511></script></body>
+    <div id=root></div>
+    <div id=notice></div>
+<script type=text/javascript src=vendor.js?d8ad0b118b3f37920819></script><script type=text/javascript src=bundle.d8ad0b11.js?d8ad0b118b3f37920819></script></body>
+
 </html>
