@@ -21,12 +21,14 @@ class Bar extends Component {
         axisPointer: {
           type: 'shadow'
         },
-        show: false,
+        show: true,
       },
-      legend: {},
+      legend: {
+        show: false
+      },
       grid: {
-        // left: '3%',
-        // right: '4%',
+        left: '3%',
+        right: '4%',
         // bottom: '3%',
         containLabel: true
       },
