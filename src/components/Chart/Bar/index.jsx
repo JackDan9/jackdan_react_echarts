@@ -13,13 +13,15 @@ class Bar extends Component {
   getOption = () => {
     let option = {
       title: {
-        text: 'World Population'
+        text: 'World Population',
+        show: false
       },
       tooltip: {
         trigger: 'axis',
         axisPointer: {
           type: 'shadow'
-        }
+        },
+        show: false,
       },
       legend: {},
       grid: {

@@ -7,7 +7,6 @@ class Pie extends Component {
   constructor(props) {
     super(props);
     this.myChart = null;
-
   }
 
   getOption = () => {
@@ -15,14 +14,16 @@ class Pie extends Component {
       title: {
         text: 'Referer of a Website',
         subtext: 'Fake Data',
-        left: 'center'
+        left: 'center',
+        show: false,
       },
       tooltip: {
         trigger: 'item'
       },
       legend: {
         orient: 'vertical',
-        left: 'left'
+        left: 'left',
+        show: false
       },
       series: [
         {
