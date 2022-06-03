@@ -7,6 +7,7 @@ import React, { Component } from "react";
 import Bar from "./Bar";
 import Line from "./Line";
 import Map from "./Map";
+import Pie from "./Pie";
 import style from "./style.scss";
 
 class Chart extends Component {
@@ -26,6 +27,8 @@ class Chart extends Component {
             <Line />
 
             <Bar />
+
+            <Pie />
           </div>
         </div>
         <div className={style.centerContainer}>
