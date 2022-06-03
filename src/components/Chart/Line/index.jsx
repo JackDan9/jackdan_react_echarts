@@ -61,7 +61,7 @@ class Line extends Component {
       ],
       grid: [
         {
-          bottom: '60%'
+          show: false
         },
       ],
       series: [
