@@ -104,11 +104,18 @@ class Line extends Component {
       },
       xAxis: [
         {
-          data: dateList
+          data: dateList,
+          splitLine: {
+            show: false
+          }
         },
       ],
       yAxis: [
-        {},
+        {
+          splitLine: {
+            show: false
+          }
+        },
       ],
       grid: [
         {
