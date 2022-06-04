@@ -9,6 +9,7 @@ import Line from "./Line";
 import Map from "./Map";
 import Pie from "./Pie";
 import Radar from "./Radar";
+import Scatter from "./Scatter";
 import style from "./style.scss";
 
 class Chart extends Component {
@@ -38,6 +39,8 @@ class Chart extends Component {
         <div className={style.rightContainer}>
           <div className={style.content}>
             <Radar />
+
+            <Scatter />
           </div>
         </div>
       </div>
