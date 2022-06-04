@@ -71,7 +71,7 @@ class Map extends Component {
   };
 
   componentDidMount() {
-    let chartDom = document.getElementById('main');
+    let chartDom = document.getElementById('mapMain');
     this.myChart = echarts.init(chartDom);
 
     let chinaGeoJson = require('../../../static/json/china.json');
@@ -501,7 +501,7 @@ class Map extends Component {
   render() {
     return (
       <div className={style.mapContainer}>
-        <div id="main" style={{ width: '100%', height: '100%' }}></div>
+        <div id="mapMain" style={{ width: '100%', height: '100%' }}></div>
       </div>
     )
   }

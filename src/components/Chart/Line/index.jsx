@@ -11,7 +11,7 @@ class Line extends Component {
   }
 
   componentDidMount() {
-    let chartDom = document.getElementById("mainCanvas");
+    let chartDom = document.getElementById("lineMain");
     this.myChart = echarts.init(chartDom);
 
     const data = [
@@ -141,7 +141,7 @@ class Line extends Component {
   render() {
     return (
       <div className={style.lineContainer}>
-        <div id="mainCanvas" style={{ width: '100%', height: '100%' }}></div>
+        <div id="lineMain" style={{ width: '100%', height: '100%' }}></div>
       </div>
     )
   }

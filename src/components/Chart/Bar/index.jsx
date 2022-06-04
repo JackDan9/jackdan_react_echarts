@@ -32,14 +32,14 @@ class Bar extends Component {
         // bottom: '3%',
         containLabel: true
       },
-      xAxis: {
+      yAxis: {
         type: 'value',
         boundaryGap: [0, 0.01],
         splitLine: {
           show: false
         }
       },
-      yAxis: {
+      xAxis: {
         type: 'category',
         data: ['Brazil', 'Indonesia', 'USA', 'India', 'China', 'World'],
         splitLine: {
