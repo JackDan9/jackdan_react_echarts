@@ -107,7 +107,8 @@ class Line extends Component {
           data: dateList,
           splitLine: {
             show: false
-          }
+          },
+          axisLabel: { interval: 1, rotate: 30 }
         },
       ],
       yAxis: [

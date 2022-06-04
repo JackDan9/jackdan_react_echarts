@@ -8,6 +8,7 @@ import Bar from "./Bar";
 import Line from "./Line";
 import Map from "./Map";
 import Pie from "./Pie";
+import Radar from "./Radar";
 import style from "./style.scss";
 
 class Chart extends Component {
@@ -34,7 +35,11 @@ class Chart extends Component {
         <div className={style.centerContainer}>
           <Map />
         </div>
-        <div className={style.rightContainer}></div>
+        <div className={style.rightContainer}>
+          <div className={style.content}>
+            <Radar />
+          </div>
+        </div>
       </div>
     )
   }
