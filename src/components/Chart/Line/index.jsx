@@ -3,7 +3,9 @@ import * as echarts from 'echarts';
 import style from './style.scss';
 
 const linePropTypes = {
-  lineTitle: PropTypes.object
+  lineTitle: PropTypes.object,
+  lineTooltip: PropTypes.object,
+
 }
 
 class Line extends Component {
@@ -101,7 +103,7 @@ class Line extends Component {
           text: '折线图'
         },
       ],
-      tooltip: {
+      tooltip: this.props.lineTooltip ? this.props.lineTooltip : {
         trigger: 'axis'
       },
       xAxis: [
@@ -110,7 +112,7 @@ class Line extends Component {
           splitLine: {
             show: false
           },
-          axisLabel: { interval: 1, rotate: 30 }
+          axisLabel: { interval: 0, rotate: 30 }
         },
       ],
       yAxis: [
