@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import * as echarts from 'echarts';
 import style from './style.scss';
-// propT
 
+const linePropTypes = {
+  lineTitle: PropTypes.object
+}
 
 class Line extends Component {
   constructor(props) {
@@ -92,11 +94,11 @@ class Line extends Component {
           max: 400
         },
       ],
-      title: [
+      title: this.props.lineTitle ? this.props.lineTitle : [
         {
           show: false,
           left: 'center',
-          text: 'Gradient along the y axis'
+          text: '折线图'
         },
       ],
       tooltip: {
@@ -147,5 +149,7 @@ class Line extends Component {
     )
   }
 }
+
+Line.propTypes = linePropTypes;
 
 export default Line;
