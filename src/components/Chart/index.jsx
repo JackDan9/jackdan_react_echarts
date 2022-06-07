@@ -27,7 +27,8 @@ class Chart extends Component {
       <div className={style.chartContainer}>
         <div className={style.leftContainer}>
           <div className={style.content}>
-            <Line />
+            <Line 
+              title={lineTitle}  />
 
             <Bar />
 
