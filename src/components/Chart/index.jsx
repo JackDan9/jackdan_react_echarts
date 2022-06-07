@@ -5,6 +5,7 @@
  */
 import React, { Component } from "react";
 import Bar from "./Bar";
+import Funnel from "./Funnel";
 import Line from "./Line";
 import Map from "./Map";
 import Pie from "./Pie";
@@ -41,6 +42,8 @@ class Chart extends Component {
             <Radar />
 
             <Scatter />
+            
+            <Funnel />
           </div>
         </div>
       </div>
