@@ -5,7 +5,8 @@ import style from './style.scss';
 const linePropTypes = {
   lineTitle: PropTypes.object,
   lineTooltip: PropTypes.object,
-
+  linexAxis: PropTypes.object,
+  
 }
 
 class Line extends Component {
@@ -106,7 +107,7 @@ class Line extends Component {
       tooltip: this.props.lineTooltip ? this.props.lineTooltip : {
         trigger: 'axis'
       },
-      xAxis: [
+      xAxis: this.props.linexAxis ? this.props.linexAxis : [
         {
           data: dateList,
           splitLine: {
