@@ -112,13 +112,6 @@ export default class twoRes extends Component {
     return (
       <div className={style.Box}>
         <Chart />
-        {/* <div className={style.Nav}>
-          <LeftNav leftNav={leftNavsFirst} />
-        </div> */}
-        {/* <div className={style.container} style={{ inset: '109px 40px 35px 225px', background: 'rgb(229, 229, 229)' }}> */}
-          {/* {this.props.children} */}
-          {/* <canvas className={style.mainCanvas} style={{ position: 'fixed', margin: 32, background: 'rgb(255, 255, 255)'}} id="mainCanvas" width={2334} height={900}></canvas> */}
-        {/* </div> */}
       </div>
     )
   }

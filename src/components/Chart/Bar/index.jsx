@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 import * as echarts from 'echarts';
 
 import style from './style';
+import StandardDrawer from 'components/StandardDrawer';
+import { Button, Drawer } from 'antd';
 
 
 class Bar extends Component {
   constructor(props) {
     super(props);
     this.myChart = null;
+    this.state = {
+      visible: false
+    }
   }
 
   getOption = () => {
@@ -76,12 +81,55 @@ class Bar extends Component {
     window.removeEventListener('resize', this.myChart.resize);
   }
 
+  handleBarClick = () => {
+    this.setState({
+      visible: !this.state.visible
+    })
+  }
 
+  handleDrawerClose = () => {
+    this.setState({
+      visible: !this.state.visible
+    })
+  }
+
+  drawerTitleRender = () => {
+    return <div style={{
+      display: "flex",
+      height: '0.3rem',
+      width: '100%'
+    }}>
+      <Button type="text" style={{
+
+      }}>样式</Button>
+      <Button type="text"></Button>
+    </div>
+  }
 
   render() {
     return (
-      <div className={style.barContainer}>
-        <div id="barMain" style={{width: '100%', height: '100%'}}></div>
+      <div>
+        <div className={style.barContainer}>
+          <div 
+            onClick={this.handleBarClick}
+            id="barMain" 
+            style={{width: '100%', height: '100%'}}></div>
+        </div>
+        <Drawer
+          title={this.drawerTitleRender}
+          closeable={false}
+          onClose={this.handleDrawerClose}
+          visible={this.state.visible}
+          drawerStyle={{
+            background: 'rgba(0, 0, 0, 0.8)',
+            
+          }}
+          headerStyle={{
+            color: 'rgba(255, 255, 255,0)'
+
+          }}>
+
+        </Drawer>
       </div>
     )
   }

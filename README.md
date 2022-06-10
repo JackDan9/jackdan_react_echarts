@@ -22,6 +22,16 @@
 
 - [中国地图geojson](https://github.com/JackDan9/jackdan_react_echarts/blob/master/src/static/json/china.json)
 
+## 版本问题
+
+- 引入antd 4.12.1，出现了
+
+```shell
+# Uncaught TypeError: __WEBPACK_IMPORTED_MODULE_0_react__.createContext is not a function
+# 解决方案参考: https://stackoverflow.com/questions/54521723/react-default-createcontext-is-not-a-function-when-using-react-redux
+npm update react react-dom
+```
+
 
 ## Build Setup
 

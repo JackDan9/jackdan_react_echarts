@@ -16,6 +16,11 @@ import style from "./style.scss";
 class Chart extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      lineTitle: {
+        show: true
+      }
+    }
   }
 
   componentDidMount() {
@@ -28,7 +33,7 @@ class Chart extends Component {
         <div className={style.leftContainer}>
           <div className={style.content}>
             <Line 
-              title={lineTitle}  />
+              title={this.state.lineTitle}  />
 
             <Bar />
 
