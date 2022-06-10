@@ -94,16 +94,26 @@ class Bar extends Component {
   }
 
   drawerTitleRender = () => {
-    return <div style={{
-      display: "flex",
-      height: '0.3rem',
-      width: '100%'
-    }}>
-      <Button type="text" style={{
-
-      }}>样式</Button>
-      <Button type="text"></Button>
-    </div>
+    return (
+      <div style={{
+        display: "flex",
+        height: '100%',
+        width: '100%'
+      }}>
+        <div type="text" style={{
+          background: 'transparent',
+          color: 'rgba(255,255,255)',
+          height: '100%'
+        }}>样式</div>
+        <div type="text" style={{
+          background: 'transparent',
+          color: 'rgba(255, 255, 255, 0)',
+          height: '100%'
+        }}>
+        数据
+        </div>
+      </div>
+    )
   }
 
   render() {
@@ -116,19 +126,18 @@ class Bar extends Component {
             style={{width: '100%', height: '100%'}}></div>
         </div>
         <Drawer
-          title={this.drawerTitleRender}
+          width="2rem"
+          title={this.drawerTitleRender()}
           closeable={false}
           onClose={this.handleDrawerClose}
           visible={this.state.visible}
           drawerStyle={{
             background: 'rgba(0, 0, 0, 0.8)',
-            
           }}
           headerStyle={{
-            color: 'rgba(255, 255, 255,0)'
-
+            color: 'rgba(255, 255, 255, 0)',
+            background: 'rgba(0, 0, 0, 0.8',
           }}>
-
         </Drawer>
       </div>
     )
