@@ -93,25 +93,17 @@ class Bar extends Component {
     })
   }
 
+  /**
+   * 
+   * 抽屉自定义标题布局
+   * 
+   * @returns ReactNode
+   */
   drawerTitleRender = () => {
     return (
-      <div style={{
-        display: "flex",
-        height: '100%',
-        width: '100%'
-      }}>
-        <div type="text" style={{
-          background: 'transparent',
-          color: 'rgba(255,255,255)',
-          height: '100%'
-        }}>样式</div>
-        <div type="text" style={{
-          background: 'transparent',
-          color: 'rgba(255, 255, 255, 0)',
-          height: '100%'
-        }}>
-        数据
-        </div>
+      <div className={style.drawerTitle}>
+        <div className={style.titleStyleBtn}>样式</div>
+        <div className={style.titleDataBtn}>数据</div>
       </div>
     )
   }
@@ -137,6 +129,7 @@ class Bar extends Component {
           headerStyle={{
             color: 'rgba(255, 255, 255, 0)',
             background: 'rgba(0, 0, 0, 0.8',
+            padding: null
           }}>
         </Drawer>
       </div>
