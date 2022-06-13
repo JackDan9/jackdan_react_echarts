@@ -26,3 +26,12 @@
     border-left: 0.5px solid rgba(255, 255, 255, 1);
   }
 }
+
+
+.drawerContainer {
+  display: block;
+
+  .ant-drawer-content-wrapper > .ant-drawer-content > .ant-drawer-wrapper-body > .ant-drawer-body {
+    padding: 0;
+  }
+}

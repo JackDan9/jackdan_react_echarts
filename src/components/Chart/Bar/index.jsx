@@ -3,7 +3,7 @@ import * as echarts from 'echarts';
 
 import style from './style';
 import StandardDrawer from 'components/StandardDrawer';
-import { Button, Drawer } from 'antd';
+import { Button, Card, Drawer } from 'antd';
 
 
 class Bar extends Component {
@@ -11,9 +11,41 @@ class Bar extends Component {
     super(props);
     this.myChart = null;
     this.state = {
-      visible: false
+      visible: false,
+      activeTabKey: 'title'
     }
   }
+
+  tabList = [
+    {
+      key: 'title',
+      tab: '标题',
+    },
+    {
+      key: 'legend',
+      tab: '插图'
+    },
+    {
+      key: 'grid',
+      tab: '网格'
+    },
+    {
+      key: 'xAxis',
+      tab: 'x轴'
+    }, 
+    {
+      key: 'yAxis',
+      tab: 'y轴'
+    },
+    {
+      key: 'tooltip',
+      tab: '提示框'
+    },
+    {
+      key: 'toolbox',
+      tab: '工具栏'
+    }
+];
 
   getOption = () => {
     let option = {
@@ -122,6 +154,7 @@ class Bar extends Component {
             style={{width: '100%', height: '100%'}}></div>
         </div>
         <Drawer
+          className={style.drawerContainer}
           width="2rem"
           title={this.drawerTitleRender()}
           closeable={false}
@@ -129,13 +162,36 @@ class Bar extends Component {
           visible={this.state.visible}
           drawerStyle={{
             background: 'rgba(0, 0, 0, 0.8)',
+            padding: 0
           }}
           headerStyle={{
             color: 'rgba(255, 255, 255, 0)',
-            background: 'rgba(0, 0, 0, 0.8',
-            padding: null
+            background: 'rgba(0, 0, 0, 0.8)',
+            padding: 0,
+            border: 'none'
+          }}
+          contentWrapperStyle={{
+            padding: '0'
           }}>
-            
+          <div className={style.drawerBody}>
+            <Card 
+              style={{
+                background: 'transparent',
+                width: '100%',
+                color: 'rgba(255, 255, 255, 1)',
+                padding: 0,
+                border: 'none'
+              }}
+              tabList={this.tabList}
+              activeTabKey={this.state.activeTabKey}
+              onTabChange={(tabKey) => {
+                this.setState({
+                  activeTabKey: tabKey
+                })
+              }}>
+                aaa
+            </Card>
+          </div>
         </Drawer>
       </div>
     )
