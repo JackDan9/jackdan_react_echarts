@@ -93,6 +93,10 @@ class Bar extends Component {
     })
   }
 
+  handleChartParameter = (type) => {
+
+  }
+
   /**
    * 
    * 抽屉自定义标题布局
@@ -102,8 +106,8 @@ class Bar extends Component {
   drawerTitleRender = () => {
     return (
       <div className={style.drawerTitle}>
-        <div className={style.titleStyleBtn}>样式</div>
-        <div className={style.titleDataBtn}>数据</div>
+        <div className={style.titleStyleBtn} onClick={this.handleChartParameter('style')}>样式</div>
+        <div className={style.titleDataBtn} onClick={this.handleChartParameter('data')}>数据</div>
       </div>
     )
   }
@@ -131,6 +135,7 @@ class Bar extends Component {
             background: 'rgba(0, 0, 0, 0.8',
             padding: null
           }}>
+            
         </Drawer>
       </div>
     )
