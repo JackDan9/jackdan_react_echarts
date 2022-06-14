@@ -31,7 +31,19 @@
 .drawerContainer {
   display: block;
 
-  .ant-drawer-content-wrapper > .ant-drawer-content > .ant-drawer-wrapper-body > .ant-drawer-body {
+  :global(.ant-drawer-body) {
     padding: 0;
+  }
+
+  :global(.ant-tabs-nav-container) {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  :global(.ant-tabs-tab-prev-icon) {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  :global(.ant-tabs-tab-next-icon) {
+    color: rgba(255, 255, 255, 1);
   }
 }
