@@ -113,7 +113,7 @@ class Line extends Component {
           splitLine: {
             show: false
           },
-          axisLabel: { interval: 0, rotate: 30 }
+          axisLabel: { interval: 3, rotate: 30 }
         },
       ],
       yAxis: [

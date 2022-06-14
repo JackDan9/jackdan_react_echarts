@@ -3,7 +3,7 @@ import * as echarts from 'echarts';
 
 import style from './style';
 import StandardDrawer from 'components/StandardDrawer';
-import { Button, Card, Drawer } from 'antd';
+import { Button, Card, Drawer, Input } from 'antd';
 
 
 class Bar extends Component {
@@ -189,7 +189,18 @@ class Bar extends Component {
                   activeTabKey: tabKey
                 })
               }}>
-                aaa
+                <textarea style={{
+                  background: 'transparent',
+                  color: 'rgba(255, 255, 255, 1)',
+                  width: '100%',
+                  border: 'none'
+                }}>
+                  <code>
+                    `{
+                      
+                    }`
+                  </code>
+                </textarea>
             </Card>
           </div>
         </Drawer>
