@@ -32,6 +32,45 @@
 npm update react react-dom
 ```
 
+## 样式说明
+
+### css
+
+### less
+
+- 变量声明的方式
+
+```less
+@switchPrefixCls: standard-switch; // 变量类名
+
+@duration: .3s; // 属性变量名
+
+.@{switchPrefixCls} {
+  position: relative;
+  transition: all @duration cubic-bezier(0.35, 0, 0.25, 1); 
+}
+```
+
+### scss
+
+- 变量声明的方式
+
+```scss
+$switchPrefixCls = 'standard-switch';
+
+// 或者是
+// $switchPrefixCls: standard-switch;
+
+$switchPrefixClsBtn: '#{$switchPrefixCls}-btn';
+
+$duration: .3s;
+
+.#{$switchPrefixClsBtn} {
+  position: relative;
+  transition: all $duration cubic-bezier(0.35, 0, 0.25, 1);
+}
+```
+
 
 ## Build Setup
 
