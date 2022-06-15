@@ -189,18 +189,20 @@ class Bar extends Component {
                   activeTabKey: tabKey
                 })
               }}>
-                <textarea style={{
-                  background: 'transparent',
-                  color: 'rgba(255, 255, 255, 1)',
-                  width: '100%',
-                  border: 'none'
-                }}>
-                  <code>
-                    `{
+                <div>
+                  <div>
+                    <div>显示开关</div>
+                    <div>
                       
-                    }`
-                  </code>
-                </textarea>
+                    </div>
+                  </div>
+                  <div>
+                    <div>标题文本</div>
+                    <div>
+                      <input placeholder="请输入标题文本" />
+                    </div>
+                  </div>
+                </div>
             </Card>
           </div>
         </Drawer>
