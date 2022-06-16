@@ -196,7 +196,9 @@ class Bar extends Component {
               }}>
                 <div>
                   <div style={{
-                    display: 'flex'
+                    display: 'flex',
+                    height: '44px',
+                    justifyContent: 'center'
                   }}>
                     <div>显示开关</div>
                     <div>
@@ -209,7 +211,9 @@ class Bar extends Component {
                     </div>
                   </div>
                   <div style={{
-                    display: 'flex'
+                    display: 'flex',
+                    height: '44px',
+                    justifyContent: 'center'
                   }}>
                     <div>标题文本</div>
                     <div>
