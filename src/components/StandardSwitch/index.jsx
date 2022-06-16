@@ -1,34 +1,9 @@
 import React, { Component } from 'react';
+
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import classNames from 'classnames';
 
-
-StandardSwitch.propTypes = {
-  className: PropTypes.string,
-  prefixCls: PropTypes.string,
-  disabled: PropTypes.bool,
-  checkedChildren: PropTypes.any,
-  unCheckedChildren: PropTypes.any,
-  onChange: PropTypes.func,
-  onMouseUp: PropTypes.func,
-  onClick: PropTypes.func,
-  tabIndex: PropTypes.number,
-  checked: PropTypes.bool,
-  defaultChecked: PropTypes.bool,
-  autoFocus: PropTypes.bool,
-  loadingIcon: PropTypes.node,
-};
-
-StandardSwitch.defaultProps = {
-  prefixCls: 'standard-switch',
-  checkedChildren: null,
-  unCheckedChildren: null,
-  className: '',
-  defaultChecked: false,
-  onChange: () => {},
-  onClick: () => {},
-}
+import './style.scss';
 
 class StandardSwitch extends Component {
   constructor(props) {
@@ -140,5 +115,30 @@ class StandardSwitch extends Component {
   }
 }
 
+StandardSwitch.propTypes = {
+  className: PropTypes.string,
+  prefixCls: PropTypes.string,
+  disabled: PropTypes.bool,
+  checkedChildren: PropTypes.any,
+  unCheckedChildren: PropTypes.any,
+  onChange: PropTypes.func,
+  onMouseUp: PropTypes.func,
+  onClick: PropTypes.func,
+  tabIndex: PropTypes.number,
+  checked: PropTypes.bool,
+  defaultChecked: PropTypes.bool,
+  autoFocus: PropTypes.bool,
+  loadingIcon: PropTypes.node,
+};
+
+StandardSwitch.defaultProps = {
+  prefixCls: 'standard-switch',
+  checkedChildren: null,
+  unCheckedChildren: null,
+  className: '',
+  defaultChecked: false,
+  onChange: () => {},
+  onClick: () => {},
+}
 
 export default StandardSwitch;

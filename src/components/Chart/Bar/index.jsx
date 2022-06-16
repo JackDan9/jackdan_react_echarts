@@ -4,6 +4,7 @@ import * as echarts from 'echarts';
 import style from './style';
 import StandardDrawer from 'components/StandardDrawer';
 import { Button, Card, Drawer, Input } from 'antd';
+import StandardSwitch from 'components/StandardSwitch';
 
 
 class Bar extends Component {
@@ -144,6 +145,10 @@ class Bar extends Component {
     )
   }
 
+  onChange(checked) {
+    console.log(`switch to ${checked}`);
+  }
+
   render() {
     return (
       <div>
@@ -190,13 +195,22 @@ class Bar extends Component {
                 })
               }}>
                 <div>
-                  <div>
+                  <div style={{
+                    display: 'flex'
+                  }}>
                     <div>显示开关</div>
                     <div>
-                      
+                      <StandardSwitch 
+                      defaultChecked={false} 
+                      onChange={this.onChange}
+                      checkedChildren="启动" 
+                      unCheckedChildren="关闭"
+                      prefixCls="standard-switch"></StandardSwitch>
                     </div>
                   </div>
-                  <div>
+                  <div style={{
+                    display: 'flex'
+                  }}>
                     <div>标题文本</div>
                     <div>
                       <input placeholder="请输入标题文本" />
