@@ -3,8 +3,9 @@ import * as echarts from 'echarts';
 
 import style from './style';
 import StandardDrawer from 'components/StandardDrawer';
-import { Button, Card, Drawer, Input } from 'antd';
+import { Button, Card, Drawer, Form, Input } from 'antd';
 import StandardSwitch from 'components/StandardSwitch';
+import request from 'util/request';
 
 
 class Bar extends Component {
@@ -106,9 +107,15 @@ class Bar extends Component {
     this.myChart.setOption(this.getOption());
 
     window.addEventListener("resize", this.myChart.resize);
+
+    request.get('/base').then((res) => {
+      console.log("res: ", res);
+    })
   }
 
-
+  componentWillReceiveProps() {
+    
+  }
 
   componentWillUnMount() {
     window.removeEventListener('resize', this.myChart.resize);
@@ -130,6 +137,13 @@ class Bar extends Component {
 
   }
 
+  handleData = e => {
+    e.preventDefault();
+
+  }
+
+  
+
   /**
    * 
    * 抽屉自定义标题布局
@@ -150,6 +164,18 @@ class Bar extends Component {
   }
 
   render() {
+    const { getFieldDecorator } = this.props.form;
+    const formItemLayout = {
+      labelCol: {
+        xs: { span: 12 },
+        sm: { span: 6 },
+      },
+      wrapperCol: {
+        xs: { span: 24 },
+        sm: { span: 16 },
+      },
+    };
+
     return (
       <div>
         <div className={style.barContainer}>
@@ -195,10 +221,31 @@ class Bar extends Component {
                 })
               }}>
                 <div>
-                  <div style={{
+                  <Form {...formItemLayout} onSubmit={this.handleData}>
+                    <Form.Item label="显示开关">
+                      {
+                        getFieldDecorator('titleShow', {
+                          rules: []
+                        })(<StandardSwitch 
+                          defaultChecked={false} 
+                          onChange={this.onChange}
+                          checkedChildren="启动" 
+                          unCheckedChildren="关闭"
+                          prefixCls="standard-switch"></StandardSwitch>)
+                      }
+                    </Form.Item>
+                    <Form.Item label="标题名称">
+                      {
+                        getFieldDecorator('titleText', {
+                          rules: []
+                        })(<Input />)
+                      }
+                    </Form.Item>
+                  </Form>
+                  {/* <div style={{
                     display: 'flex',
                     height: '44px',
-                    justifyContent: 'center'
+                    alignItems: 'center'
                   }}>
                     <div>显示开关</div>
                     <div>
@@ -213,13 +260,13 @@ class Bar extends Component {
                   <div style={{
                     display: 'flex',
                     height: '44px',
-                    justifyContent: 'center'
+                    alignItems: 'center'
                   }}>
                     <div>标题文本</div>
                     <div>
                       <input placeholder="请输入标题文本" />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
             </Card>
           </div>
@@ -229,4 +276,4 @@ class Bar extends Component {
   }
 }
 
-export default Bar;
+export default Form.create({ name: 'Bar' })(Bar);

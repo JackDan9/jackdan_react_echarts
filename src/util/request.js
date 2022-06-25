@@ -1,29 +1,14 @@
 /**
- *                    _ooOoo_
- *                   o8888888o
- *                   88" . "88
- *                   (| -_- |)
- *                    O\ = /O
- *                ____/`---'\____
- *              .   ' \\| |// `.
- *               / \\||| : |||// \
- *             / _||||| -:- |||||- \
- *               | | \\\ - /// | |
- *             | \_| ''\---/'' | |
- *              \ .-\__ `-` ___/-. /
- *           ___`. .' /--.--\ `. . __
- *        ."" '< `.___\_<|>_/___.' >'"".
- *       | | : `- \`.;`\ _ /`;.`/ - ` : | |
- *         \ \ `-. \_ __\ /__ _/ .-` / /
- * ======`-.____`-.___\_____/___.-`____.-'======
- *                    `=---='
- *
- * .............................................
- *          佛祖保佑             永无BUG
+ * @description request请求函数
+ * 设置拦截器interceptors
+ * 
+ * @author JackDan
+ * @date 2022-06-25
  */
-import axios from "axios"
-import { TOKEN, RETOKEN, REMEMBERME } from "../constants/storage"
-import loading from "./loading"
+import axios from "axios";
+
+import { TOKEN, RETOKEN, REMEMBERME } from "../constants/storage";
+import loading from "./loading";
 
 let loadingLayer = loading()
 
@@ -31,7 +16,7 @@ let loadingLayer = loading()
  *   封装axios get, post, delete, put 方法, 可配置是否有缓冲
  */
 
-let resource = {
+let request = {
     count: 0,
     timer: null,
     isOpen: true,
@@ -116,7 +101,7 @@ let resource = {
     }
 }
 
-// axios.defaults.baseURL = 'http://192.168.1.169:7087';
+axios.defaults.baseURL = 'http://127.0.0.1:12347/api/';
 
 // 请求拦截器
 axios.interceptors.request.use(
@@ -136,7 +121,7 @@ axios.interceptors.response.use(
             case 401:
             // if(localStorage.getItem(REMEMBERME))
             // {
-            //     resource.post('/support-user/security/retoken',{
+            //     request.post('/support-user/security/retoken',{
             //         retoken: localStorage.getItem(RETOKEN)
             //     }).then((res) => {
             //         if(res.status === 401)
@@ -160,12 +145,12 @@ axios.interceptors.response.use(
             createHashHistory().push('/login');
         }
 
-        if (resource.timer) {
-            resource.isStop(true)
+        if (request.timer) {
+            request.isStop(true)
         }
 
         return Promise.reject(error)
     }
 )
 
-export default resource
+export default request

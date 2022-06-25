@@ -10,6 +10,9 @@
 - [X] 三列布局
 - [X] 中国地图
 - [X] 北京市
+- [X] Mock数据
+- [ ] RestfulAPI(Koa)
+- [ ] SQL-DATA
 
 ## 功能参照
 

@@ -12,4 +12,6 @@ import './util/requestNextAnimationFrame'
 
 import Routes from './routes'
 
+import '../mock/index';
+
 render(<Routes />, document.getElementById('root'))

@@ -29,7 +29,7 @@
 import { observable, action, computed, autorun } from 'mobx'
 
 import { TOKEN, ROLES, USER } from 'constants/storage'
-import resource from 'util/resource'
+import request from 'util/request'
 import { uploadImage } from 'actions/upload'
 import { setInterval } from 'timers'
 
@@ -57,7 +57,7 @@ class UserStore {
                     return
                 }
                 this.timer = setInterval(() => {
-                resource.get('/woodpecker-puser/message/messageConut').then(res => {
+                request.get('/woodpecker-puser/message/messageConut').then(res => {
                     if (res.status === 200) {
                         const num = parseInt(res.data.data)
                         this.messageNum = num > 99 ? '99+' : num
@@ -94,7 +94,7 @@ class UserStore {
     @action
     changeHead(file) {
         return uploadImage(file).then(res => {
-            return resource
+            return request
             .post('/woodpecker-puser/userCenter/headChange', {
                 headurl: res.data
             })
@@ -114,7 +114,7 @@ class UserStore {
     // 修改手机号
     @action
     changePhone({ phone, password, code }) {
-        return resource
+        return request
             .post('/woodpecker-puser/userCenter/phoneChange', {
                 password: password,
                 phone: phone,
@@ -144,8 +144,7 @@ class UserStore {
 
     // 修改密码
     changePassword({ oldPassword, newPassword, newPasswordRepeat }) {
-    return resource
-        .post('/woodpecker-puser/password/change', {
+    return request.post('/woodpecker-puser/password/change', {
             oldpassword: oldPassword,
             newpassword: newPassword,
             repassword: newPasswordRepeat

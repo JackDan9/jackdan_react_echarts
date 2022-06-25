@@ -1,25 +1,8 @@
 /**
- *                    _ooOoo_
- *                   o8888888o
- *                   88" . "88
- *                   (| -_- |)
- *                    O\ = /O
- *                ____/`---'\____
- *              .   ' \\| |// `.
- *               / \\||| : |||// \
- *             / _||||| -:- |||||- \
- *               | | \\\ - /// | |
- *             | \_| ''\---/'' | |
- *              \ .-\__ `-` ___/-. /
- *           ___`. .' /--.--\ `. . __
- *        ."" '< `.___\_<|>_/___.' >'"".
- *       | | : `- \`.;`\ _ /`;.`/ - ` : | |
- *         \ \ `-. \_ __\ /__ _/ .-` / /
- * ======`-.____`-.___\_____/___.-`____.-'======
- *                    `=---='
- *
- * .............................................
- *          佛祖保佑             永无BUG
+ * @description webpack 静态资源构建配置文件
+ * 
+ * @author JackDan
+ * @date 2022-06-25
  */
 const path = require("path")
 const webpack = require("webpack")
@@ -30,7 +13,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const sourcePath = path.resolve("src")
 
 module.exports = {
-  //设置人口文件的绝对路径
+    //设置人口文件的绝对路径
     entry: {
         bundle: ["babel-polyfill", path.resolve("src/index.jsx")],
         vendor: ["react", "react-dom", "echarts"]
@@ -48,7 +31,17 @@ module.exports = {
         historyApiFallback: true,
         port: 12347, // 配置端口号
         host: "0.0.0.0",
-        contentBase: "./" // 配置文件的根目录
+        contentBase: "./", // 配置文件的根目录
+        proxy: {
+            '/api': {
+                target: 'http://localhost:12347',
+                secure: true,
+                changeOrigin: true,
+                pathRewrite: {
+                    '^/api': ''
+                }
+            }   
+        }
     },
 
     module: {
@@ -125,7 +118,7 @@ module.exports = {
             minChunks: Infinity,
             filename: "js/[name].js"
         }),
-        new HtmlWebpackPlugin({ 
+        new HtmlWebpackPlugin({
             favicon: path.resolve("./src/static/images/logo.svg"),
             template: "./src/index.html", // 模板文件
             filename: "./index.html" // 产出后的文件名称

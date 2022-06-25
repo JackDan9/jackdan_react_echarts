@@ -3,7 +3,7 @@ import echarts from 'echarts'
 
 import './index.scss'
 import Rodal from '../../../../../components/Rodal/Rodal'
-import resource from '../../../../../util/resource'
+import request from '../../../../../util/request'
 
 export default class ModalForIndex extends Component {
     constructor(props) {
@@ -66,7 +66,7 @@ export default class ModalForIndex extends Component {
     }
 
     requireTypeOne = () => {
-        resource.get(`/xaplan-cadre/api/officerLettersInfo/getLettersStatistics?areaName=${this.state.areaName}`).then((res) => {
+        request.get(`/xaplan-cadre/api/officerLettersInfo/getLettersStatistics?areaName=${this.state.areaName}`).then((res) => {
             if(res.status !== 200) {
                 console.log(res.message)
             }else {
@@ -102,7 +102,7 @@ export default class ModalForIndex extends Component {
     }
 
     requireTypeTwo = () => {
-        resource.get(`/xaplan-cadre/api/officerIllegalInfo/getIllegalStatistics?areaName=${this.state.areaName}`).then((res) => {
+        request.get(`/xaplan-cadre/api/officerIllegalInfo/getIllegalStatistics?areaName=${this.state.areaName}`).then((res) => {
             if(res.status !== 200) {
                 console.log(res.message)
             }else {
@@ -136,7 +136,7 @@ export default class ModalForIndex extends Component {
     }
 
     requireTypeThree = () => {
-        resource.get(`/xaplan-cadre/api/officerCrimeInfo/getCrimeStatistics?areaName=${this.state.areaName}`).then((res) => {
+        request.get(`/xaplan-cadre/api/officerCrimeInfo/getCrimeStatistics?areaName=${this.state.areaName}`).then((res) => {
             if(res.status !== 200) {
                 console.log(res.message)
             }else {
