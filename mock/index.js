@@ -1,5 +1,6 @@
 import Mock from 'mockjs';
 import base from './modules/base';
+import bar from './modules/chart/bar';
 
 // 修复在使用 MockJS 情况下，设置 withCredentials = true, 且未被拦截的跨域请求丢失 Cookies 的问题
 // https://github.com/nuysoft/Mock/issues/300
@@ -17,4 +18,5 @@ Mock.setup({
 })
 
 Mock.mock(/\/base/, 'get', base.getBase);
+Mock.mock(/\/bar/, 'get', bar.getBar);
 
