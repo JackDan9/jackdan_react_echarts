@@ -108,7 +108,7 @@ class Bar extends Component {
 
     window.addEventListener("resize", this.myChart.resize);
 
-    request.get('/base').then((res) => {
+    request.get('/bar').then((res) => {
       console.log("res: ", res);
     })
   }
