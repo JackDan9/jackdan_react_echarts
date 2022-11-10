@@ -1,33 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import style from './style.scss'
-import LeftNav from '../../components/leftNav'
-import Map from 'components/Chart/Map'
-import Chart from 'components/Chart'
+// import LeftNav from '../../components/leftNav'
+// import Map from 'components/Chart/Map'
+// import Chart from 'components/Chart'
+import Scene from '../../components/Scene';
 
-
-const leftNavsFirst = [
-  {
-    name: '监管概览',
-    to: '/main/tworesponsibilities/index'
-  },
-  {
-    name: '全息档案',
-    to: '/main/tworesponsibilities/holographicfile'
-  },
-  {
-    name: '异常预警',
-    to: '/main/tworesponsibilities/abnormalwarning'
-  },
-  {
-    name: '四种形态',
-    to: '/main/tworesponsibilities/fourforms'
-  }
-]
-
-export default class twoRes extends Component {
-  constructor(props) {
-    super(props)
-  }
+// export default class twoRes extends Component {
+  // constructor(props) {
+  //   super(props)
+  // }
 
   // componentDidMount() {
   //   // 获取画布
@@ -107,12 +88,16 @@ export default class twoRes extends Component {
   //   console.log("mainCanvas: ", mainCanvas);
   //   console.log("ctx: ", ctx);
   // }
+const twoRes = () => {
 
-  render() {
+  // render() {
     return (
       <div className={style.Box}>
-        <Chart />
+        {/* <Chart /> */}
+        <Scene />
       </div>
     )
-  }
+  // }
 }
+
+export default twoRes;

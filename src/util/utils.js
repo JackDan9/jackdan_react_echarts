@@ -58,3 +58,7 @@ export const deepCopy = (obj) => {
     }
     return result;
 }
+
+export const $ = (selector) => {
+    return document.querySelector(selector);
+}

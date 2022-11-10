@@ -53,6 +53,11 @@ module.exports = {
                 use: ["babel-loader"]
             },
             {
+                test: /\.(ts|tsx)$/,
+                exclude: /node_modules/,
+                use: ["babel-loader", "ts-loader"]
+            },
+            {
                 test: /\.css/,
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
@@ -102,7 +107,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: [".js", ".jsx", ".scss"],
+        extensions: [".js", ".jsx", ".scss", ".ts", ".tsx"],
         alias: {
             md_resource: path.resolve("./src/util/resource.js"),
             'static': path.resolve("./src/static"),

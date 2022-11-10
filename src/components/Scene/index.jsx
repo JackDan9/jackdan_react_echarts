@@ -2,21 +2,50 @@
  * 场景画布 组件
  * 
  */
-import React, { useEffect, useState } from 'react';
+import React, { Component } from 'react';
+import Grid from './component/Grid';
+import style from "./style.scss";
 
-const Scene = () => {
-  useEffect(() => {
-    const _bgcanvas =  document.getElementById("bgcanvas");
-    const _bgCtx = _bgcanvas.getContext('2d');
-    // const _bgDataView = new DataView(_bgCtx.getImageData())
+class Scene extends Component {
+  constructor(props) {
+    super(props);
+    this.sceneContainer = null;
+    this.canvasStyle = {
+      width: 1200,
+      height: 740,
+      scale: 100,
+      color: '#00000',
+      background: '#ffffff',
+      fontSize: 14,
+      inset: '100px 40px 35px 225px'
+    }
+  }
 
-  }, []);
+  componentDidMount() {
+    this.sceneContainer = document.querySelector("#scene");
+    
+  }
 
-  return (
-    <div id="scene" className="scene-container">
-      <canvas id="bgcanvas"></canvas>
-    </div>
-  )
+  handleMouseDown = (e) => {
+    // debugger;
+  }
+
+  render() {
+    return (
+      <div 
+        id="scene" 
+        className={style.sceneContainer}
+        onMouseDown={this.handleMouseDown}
+        style={{
+          ...this.canvasStyle,
+          width: this.canvasStyle.width + 'px',
+          height: this.canvasStyle.height + 'px'
+        }}>
+        <Grid />
+      </div>
+    )
+  }
+  
 }
 
 export default Scene;

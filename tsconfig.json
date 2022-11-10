@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": true,
+    "allowUnusedLabels": true,
+    "baseUrl": ".",
+    "checkJs": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "esnext"
+  },
+  "include": ["src", "typings.d.ts", "global.d.ts"]
+}
