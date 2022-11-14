@@ -5,7 +5,62 @@
   left: 0;
   right: 0;
 
+  .toolContainer {
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    background: #eef0f5;
+  }
+
   .tabsContainer {
-    
+    display: flex;
+    height: 45px;
+    margin-left: 0;
+    background-color: #ffffff;
+
+    .toolWrap {
+      position: relative;
+      width: 100%;
+
+      .navigationTab {
+        position: relative;
+        width: 100%;
+        height: 45px;
+        min-width: 633px;
+        border: 1px solid rgba(0,0,0,.06);
+        border-top: unset;
+        border-left-style: none;
+        box-sizing: border-box;
+
+        .tabBlockBox {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          float: left;
+          margin-right: 4px;
+
+          .tabBlockItem {
+            position: relative;
+            width: 32px;
+            height: 32px;
+            float: left;
+            margin-right: 5px;
+            cursor: pointer;
+            border-radius: 6px;
+
+            .itemIconCenter {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 20px;
+              height: 20px;
+              transform: translate(-50%, -50%);
+              pointer-events: none;
+              opacity: .2;
+            }
+          }
+        }
+      }
+    }
   }
 }

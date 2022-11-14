@@ -4,6 +4,8 @@
  */
 import React, { Component } from 'react';
 import Grid from './component/Grid';
+import LeftPanel from './component/LeftPanel';
+import Menu from './component/Menu';
 import style from "./style.scss";
 
 class Scene extends Component {
@@ -23,7 +25,7 @@ class Scene extends Component {
 
   componentDidMount() {
     this.sceneContainer = document.querySelector("#scene");
-    
+
   }
 
   handleMouseDown = (e) => {
@@ -42,6 +44,8 @@ class Scene extends Component {
           height: this.canvasStyle.height + 'px'
         }}>
         <Grid />
+        <Menu />
+        <LeftPanel />
       </div>
     )
   }
